@@ -33,7 +33,7 @@ onFilterChange = event => {
  addContact = (name, number) => {
   console.log(name)
   if(this.state.contacts.find(contact => contact.name === name)){
-    return alert(`${name} is already in contacts`)
+    return alert(`${name } is already in contacts`)
   };
 
   this.setState(prevState => ({
