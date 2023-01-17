@@ -6,7 +6,11 @@ export const ContactForm = function ({ onSubmit }) {
     event.preventDefault();
     const { name, number } = event.target.elements;
     onSubmit(name.value, number.value);
+  
+    name.value = '';
+    number.value = '';
   };
+
 
   return (
     <ContactsForm onSubmit={handleSubmit}>
